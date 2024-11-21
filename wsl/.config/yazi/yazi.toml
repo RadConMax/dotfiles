@@ -1,0 +1,6 @@
+[manager]
+ratio = [2,2,4]
+[opener]
+edit = [{ run = 'nvim "$@"', block = true }]
+[preview]
+image_quality=70

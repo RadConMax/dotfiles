@@ -1,0 +1,11 @@
+# Aliases
+alias nvimc="nvim ."
+alias nvimn="nvim ~/.config/nvim"
+alias nvimp="nvim ~/.zprofile"
+alias nvims="nvim ~/.config/starship.toml"
+alias nvimt="nvim ~/.tmux.conf"
+alias nvimw="nvim /mnt/c/Users/jesus/.wezterm.lua"
+alias nvimz="nvim ~/.zshrc"
+alias sourcep="source ~/.zprofile"
+alias sourcez="source ~/.zshrc"
+alias y="yazi"
