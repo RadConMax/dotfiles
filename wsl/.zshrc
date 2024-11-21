@@ -21,8 +21,8 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,bold"
 bindkey '^y' autosuggest-accept
 bindkey '^e' autosuggest-execute
-#bindkey "^[[A" history-search-backward
-#bindkey "^[[B" history-search-forward
+bindkey "^p" history-search-backward
+bindkey "^n" history-search-forward
 
 ### eza
 alias ls="eza --color=always --icons=always --long --group-directories-first --no-filesize --no-permissions --no-time --no-user"
