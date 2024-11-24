@@ -3,6 +3,11 @@ Invoke-Expression (&starship init powershell)
 
 ### Autosuggestions
 Import-Module PSReadLine
+Set-PSReadLineKeyHandler -Chord "Ctrl+y" -Function AcceptSuggestion
+Set-PSReadLineKeyHandler -Chord "Ctrl+e" -Function AcceptLine
+Set-PSReadLineKeyHandler -Chord "Ctrl+l" -Function ForwardWord
+Set-PSReadLineKeyHandler -Chord "Ctrl+n" -Function NextHistory
+Set-PSReadLineKeyHandler -Chord "Ctrl+p" -Function PreviousHistory
 
 ### eza
 function ezaWithParams() {
