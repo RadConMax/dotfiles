@@ -29,4 +29,4 @@ alias updatewezterm="cp ~/.config/wezterm/wezterm.lua ~/.config/dotfiles/osx/.co
 alias updateyazi="cp -r ~/.config/yazi ~/.config/dotfiles/osx/.config"
 alias updatezhsrc="cp ~/.zshrc ~/.config/dotfiles/osx/.zshrc"
 alias updatezprofile="cp ~/.zprofile ~/.config/dotfiles/osx/.zprofile"
-alias updatedotfiles="updatebat && updatestarship && updatetmux && updatewezterm && updateyazi && updatezhsrc && updatezprofile"
+alias updatedotfiles="updatebat && updatestarship && updatetmux && updatewezterm && updateyazi && updatezhsrc && updatezprofile; echo 'remember removing .zshrc and .zprofile unwanted sections'"
