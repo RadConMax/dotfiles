@@ -8,7 +8,7 @@ bindkey -v
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 ### nvm
-export NVM_DIR="~/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"
 
@@ -34,3 +34,6 @@ eval "$(fzf --zsh)"
 alias batthemes="bat cache --build && bat --list-themes | fzf --preview='bat --theme={} --color=always ~/.zshrc'"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export BAT_THEME="tokyonight_night"
+
+### Yazi
+alias y="yazi"
