@@ -25,12 +25,19 @@ $Env:BAT_THEME = "tokyonight_night"
 $Env:YAZI_FILE_ONE = "$HOME\scoop\apps\git\current\usr\bin\file.exe"
 Set-Alias -Name y -Value yazi
 
-### Markdown
-$Env:MARKDOWN_IMAGES_PATH = $HOME
-
 ### Obsidian
-$Env:OBSIDIAN_VAULT_PATH = "C:\Users\jesus\Documents\Obsidian\RadCon Max"
-$Env:OBSIDIAN_IMAGES_PATH = "C:\Users\jesus\.notes\images"
+$Env:MARKDOWN_IMAGES_PATH = "$HOME\.images"
+$Env:PERSONAL_VAULT_PATH = "$HOME\Documents\Obsidian\Personal"
+$Env:WORK_VAULT_PATH = "$HOME\Documents\Obsidian\Work"
+
+### Update dot files
+function uDotFiles() {
+    Copy-Item -Path "$HOME\.config\starship.toml" -Destination "$HOME\.config\dotfiles\windows\.config\starship.toml" -Force
+    Copy-Item -Path $PROFILE -Destination "$HOME\.config\dotfiles\windows\Documents\PowerShell\Microsoft.PowerShell_profile.ps1" -Force
+    Copy-Item -Path "$HOME\AppData\Roaming\bat" -Destination "$HOME\.config\dotfiles\windows\AppData\Roaming" -Recurse -Force
+    Copy-Item -Path "$HOME\AppData\Roaming\yazi\config\yazi.toml" -Destination "$HOME\.config\dotfiles\windows\AppData\Roaming\yazi\config\yazi.toml" -Force
+}
+Set-Alias -Name updatedotfiles -Value uDotFiles
 
 ### Aliases
 function emptyCommit() { cmd /c "git commit --allow-empty -m " }
