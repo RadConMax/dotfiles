@@ -30,3 +30,13 @@ alias updateyazi="cp -r ~/.config/yazi ~/.config/dotfiles/osx/.config"
 alias updatezhsrc="cp ~/.zshrc ~/.config/dotfiles/osx/.zshrc"
 alias updatezprofile="cp ~/.zprofile ~/.config/dotfiles/osx/.zprofile"
 alias updatedotfiles="updatebat && updatestarship && updatetmux && updatewezterm && updateyazi && updatezhsrc && updatezprofile; echo 'remember removing .zshrc and .zprofile unwanted sections'"
+
+### Set dot files
+alias setbat="cp -r ~/.config/dotfiles/osx/.config/bat ~/.config/bat"
+alias setstarship="cp ~/.config/dotfiles/osx/.config/starship.toml ~/.config/starship.toml"
+alias settmux="cp ~/.config/dotfiles/osx/.tmux.conf ~/.tmux.conf"
+alias setwezterm="cp ~/.config/dotfiles/osx/.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua"
+alias setyazi="cp -r ~/.config/dotfiles/osx/.config/yazi ~/.config/yazi"
+alias setzhsrc="cp ~/.config/dotfiles/osx/.zshrc ~/.zshrc"
+alias setzprofile="cp ~/.config/dotfiles/osx/.zprofile ~/.zprofile"
+alias setdotfiles="setbat && setstarship && settmux && setwezterm && setyazi && setzhsrc && setzprofile; echo 'remember adding back .zshrc-bkp and .zprofile-bkp sections'"

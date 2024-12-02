@@ -1,3 +1,9 @@
+# Zsh
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+
 # Brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

@@ -31,3 +31,12 @@ alias updatezhsrc="cp ~/.zshrc ~/.config/dotfiles/wsl/.zshrc"
 alias updatezprofile="cp ~/.zprofile ~/.config/dotfiles/wsl/.zprofile"
 alias updatedotfiles="updatebat && updatestarship && updatetmux && updatewezterm && updateyazi && updatezhsrc && updatezprofile"
 
+### Set dot files
+alias setbat="cp -r ~/.config/dotfiles/wsl/.config/bat ~/.config/bat"
+alias setstarship="cp ~/.config/dotfiles/wsl/.config/starship.toml ~/.config/starship.toml"
+alias settmux="cp ~/.config/dotfiles/wsl/.tmux.conf ~/.tmux.conf"
+alias setwezterm="cp ~/.config/dotfiles/wsl/.wezterm.lua $WINHOME/.wezterm.lua"
+alias setyazi="cp -r ~/.config/dotfiles/wsl/.config/yazi ~/.config/yazi"
+alias setzhsrc="cp ~/.config/dotfiles/wsl/.zshrc ~/.zshrc"
+alias setzprofile="cp ~/.config/dotfiles/wsl/.zprofile ~/.zprofile"
+alias setdotfiles="setbat && setstarship && settmux && setwezterm && setyazi && setzhsrc && setzprofile"
