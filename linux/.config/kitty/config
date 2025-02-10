@@ -1,0 +1,21 @@
+new_tab "config"
+enabled_layouts tall,fat,stack
+layout tall
+cd ~/.config/hypr
+launch --var window=first --title="hyprland config" nvim hyprland.conf
+cd ~/.config/waybar
+launch --title="waybar config" nvim  config.jsonc
+cd ~/.config/nvim
+launch --title="nvim config" nvim .
+cd ~/.config/kitty
+launch --title="kitty config" nvim kitty.conf
+focus_matching_window var:window=first
+
+
+# new_tab complex tab
+# layout splits
+# launch --var window=first
+# launch --location=vsplit
+# launch --location=hsplit --bias=40
+# focus_matching_window var:window=first
+# launch --location=hsplit
