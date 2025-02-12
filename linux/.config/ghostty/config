@@ -1,22 +1,42 @@
-window-padding-x=7
-window-padding-y=7,1
-window-decoration=false
-background-opacity=0.5
-background-blur-radius=10
+window-theme = "dark"
+window-padding-x = 5
+background-opacity = 0.7
+background-blur-radius = 10
+font-family = "MesloLGL Nerd Font Mono"
+font-size = "16"
+theme = "tokyonight-storm"
 
 # config
-#keybind = alt+shift+ctrl+minus=decrease_font_size
-#keybind = alt+shift+ctrl+equal=increase_font_size
+keybind = alt+shift+ctrl+minus=decrease_font_size:1
+keybind = alt+shift+ctrl+equal=increase_font_size:1
 keybind = alt+shift+ctrl+backspace=reset_font_size
 keybind = alt+shift+ctrl+e=open_config
 keybind = alt+shift+ctrl+r=reload_config
 
+# copy/paste
+keybind = ctrl+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
+
+# inspector
+keybind = shift+ctrl+i=inspector:toggle
+
 # quick terminal
-keybind = shift+ctrl+slash=toggle_quick_terminal
+keybind = shift+ctrl+\=toggle_quick_terminal
+
+# navigate
+keybind = shift+ctrl+u=scroll_page_up
+keybind = shift+ctrl+d=scroll_page_down
+keybind = shift+ctrl+y=scroll_page_lines:1
+keybind = shift+ctrl+b=scroll_page_lines:-1
 
 # splits
-keybind = shift+ctrl+h=goto_split:previous
-keybind = shift+ctrl+l=goto_split:next
+keybind = shift+ctrl+/=new_split:right
+keybind = shift+ctrl+-=new_split:down
+keybind = shift+ctrl+x=close_surface
+keybind = shift+ctrl+h=goto_split:left
+keybind = shift+ctrl+j=goto_split:down
+keybind = shift+ctrl+k=goto_split:up
+keybind = shift+ctrl+l=goto_split:right
 keybind = shift+ctrl+z=toggle_split_zoom
 keybind = alt+ctrl+h=resize_split:left,10
 keybind = alt+ctrl+j=resize_split:down,10
@@ -25,8 +45,14 @@ keybind = alt+ctrl+l=resize_split:right,10
 keybind = alt+ctrl+equal=equalize_splits
 
 # tabs
-keybind = shift+ctrl+j=previous_tab
-keybind = shift+ctrl+k=next_tab
-keybind = alt+shift+ctrl+j=move_tab:-1
-keybind = alt+shift+ctrl+k=move_tab:1
+keybind = shift+ctrl+t=new_tab
+keybind = shift+ctrl+q=close_tab
+keybind = shift+ctrl+.=previous_tab
+keybind = shift+ctrl+,=next_tab
+keybind = alt+shift+ctrl+,=move_tab:-1
+keybind = alt+shift+ctrl+.=move_tab:1
 keybind = alt+shift+ctrl+s=toggle_tab_overview
+
+# windows
+keybind = shift+ctrl+w=new_window
+keybind = alt+shift+ctrl+q=close_window
